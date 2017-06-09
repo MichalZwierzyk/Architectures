@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="user" type="com.justeat.architectures.mvvm.UserUiModel"/>
+        <variable name="viewModel" type="com.justeat.architectures.mvvm.ViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/user_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textColor="@{user.color}"
+            android:textSize="18sp"
+            android:text="@{user.fullname}"/>
+
+        <!--Generate Ui Events-->
+        <Button
+            android:id="@+id/get_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/get_user"
+            android:onClick="@{() -> viewModel.onGetUserButtonClicked()}"/>
+
+    </LinearLayout>
+</layout>
