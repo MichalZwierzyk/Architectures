@@ -12,3 +12,5 @@ Path of evolution:
 * React (handling async operations inside Model using reactive and functional programming paradigms)
 * Model View Intent
 * Components (MVI implemented using Google's ViewModel and LiveData, introduction of DI and aspect-oriented programming)
+
+For more details see the following presentation [Evolution of Software Architectures](https://docs.google.com/presentation/d/19w9n5I4oEKCKRyuhvozCFLpLr_z06-NdOx_L2G9skzg/edit#slide=id.g2276fdf3fb_2_51).
